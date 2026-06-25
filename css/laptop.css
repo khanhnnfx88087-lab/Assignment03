@@ -1,0 +1,345 @@
+* {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+/* Lồng chữ vào ảnh */
+.img-banner {
+  position: relative;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+#banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Phần thông tin từ nav-bar đến cuối */
+section .container {
+  /* width: 1170px; */
+  margin: auto;
+  display: block;
+
+  padding: 30px 10px;
+  line-height: 25px;
+}
+
+/* nav-bar */
+
+#nav-bar .container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.start {
+  padding-right: 400px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+i {
+  color: rgb(99, 102, 252);
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* avatar */
+.avatar {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #f7f7f7;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -80%;
+}
+
+/* Mục tiêu nghề nghiệp - thông tin cá nhân */
+
+#about {
+  padding-top: 30px;
+}
+
+#about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+
+  margin: 0 30px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+.info li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* input {
+  length: 100%;
+} */
+
+/* 3 cột 2 hàng */
+#job-info .container {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+/* Mới */
+.border-1 .view-btn {
+  display: none; /* Mặc định ẩn nút */
+  transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi HOVER vào vùng .border-1 */
+.border-1:hover {
+  background-color: #f8f9fa; /* Đổi màu nền nhẹ để tạo điểm nhấn */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng mờ đổ xuống */
+}
+
+/* Khi hover vào .border-1 thì nút .view-btn mới hiển thị ra */
+.border-1:hover .view-btn {
+  display: inline-block;
+}
+
+/* Mới */
+
+.grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+.grid i {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: grey;
+}
+
+.border-1 {
+  padding: 20px;
+  border-style: ridge;
+  border-width: 2px;
+}
+
+.timeline {
+  font-style: italic;
+}
+
+.timeline span {
+  background-color: rgb(111, 156, 199);
+  color: #f7f7f7;
+  border: 5px solid rgb(111, 156, 199);
+  border-radius: 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  text-align: center;
+  gap: 10px;
+}
+
+.grid-2 i {
+  padding: 20px;
+  font-size: 20px;
+  border: 2px solid rgb(111, 156, 199);
+  border-radius: 50%;
+}
+
+/* Thanh thang điểm ngôn ngữ */
+.score-blue {
+  background: #199cdb;
+  display: inline-block;
+  height: 4px;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.score-grey {
+  background: #8c8e8f;
+  display: inline-block;
+  height: 4px;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.du-an-border {
+  border-style: groove;
+  border-width: 2px;
+}
+
+.border-top i {
+  color: grey;
+}
+
+/* Chứng chỉ - giải thưởng */
+#certificate {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+#certificate .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#certificate .section-title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
+}
+
+.section-title {
+  grid-column: 1 / span 2;
+}
+
+.certificate-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+/* Đường kẻ dọc giữa 2 chứng chỉ ở hàng 1 */
+.img-grid-2 {
+  border-left: 1px solid #d6c08d;
+  padding-left: 40px;
+}
+
+/* Đường kẻ ngang phân tách giữa hàng 1 và hàng 2 */
+.certificate-grid {
+  border-bottom: 1px solid #d6c08d;
+  padding-bottom: 40px;
+}
+
+.grid-3 {
+  border-bottom: none;
+}
+
+.img-grid {
+  width: 220px;
+  height: auto;
+}
+
+.text-transform {
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+#certificate ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.none ul li {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+#project .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  font-size: 14px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#project h1 {
+  margin-left: 150px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.du-an-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr; /* Cột trái cố định 100px cho tiêu đề mục */
+  padding: 15px;
+  border-top: 1px solid #eee; /* Đường kẻ mảnh giữa các mục */
+}
+
+.du-an-grid p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.du-an-img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.du-an-border {
+  border-style: groove;
+  border-width: 2px;
+}
+
+.border-top {
+  border-top-style: groove;
+  padding: 10px;
+  border-width: 2px;
+}
+
+.border-xanh {
+  background-color: rgb(111, 156, 199);
+  color: #f7f7f7;
+  border: 5px solid rgb(111, 156, 199);
+  border-radius: 20px;
+}
+
+/* Phần footer */
+#footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  padding: 20px;
+}
+
+#footer i {
+  font-size: 40px;
+}
+
+#footer p {
+  color: grey;
+}
